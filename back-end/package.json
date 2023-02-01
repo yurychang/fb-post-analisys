@@ -1,0 +1,30 @@
+{
+    "name": "node-crawler-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon ./bin/www",
+        "prisma:studio": "npx prisma studio"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@prisma/client": "^4.9.0",
+        "axios": "^1.2.5",
+        "cheerio": "^1.0.0-rc.12",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "debug": "^4.3.4",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.20",
+        "puppeteer": "^19.6.1"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.13",
+        "eslint": "^8.32.0",
+        "prisma": "^4.9.0"
+    }
+}

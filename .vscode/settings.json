@@ -1,0 +1,28 @@
+{
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "name": "backend/dev",
+                    "commands": ["cd back-end", "yarn", "yarn start"]
+                },
+                {
+                    "name": "backend",
+                    "commands": ["cd back-end"]
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "client/dev",
+                    "commands": ["cd front-end", "yarn", "yarn dev"]
+                },
+                {
+                    "name": "client",
+                    "commands": ["cd front-end"]
+                }
+            ]
+        }
+    ]
+}
