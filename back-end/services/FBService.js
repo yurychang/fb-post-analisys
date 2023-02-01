@@ -1,13 +1,14 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-
+const cheerio = require('cheerio');
+require('dotenv').config();
 class FBService {
     async main() {
         const browser = await puppeteer.launch({
             args: ['--deny-permission-prompts'],
             // debug options
-            // args: ['--deny-permission-prompts', `--window-size=1920,1080`],
             // headless: false,
+            // args: ['--deny-permission-prompts', `--window-size=1920,1080`],
             // defaultViewport: {
             //     width: 1920,
             //     height: 1080,
@@ -21,11 +22,20 @@ class FBService {
             pwd: process.env.FB_PASSWORD,
         });
         await page.waitForNavigation();
-        await page.goto('https://www.facebook.com/groups/257393997640502');
-        page.on('console', (msg) => console.log('PAGE LOG:', msg.text()));
-        const feedsData = await page.evaluate(this.findFeedsContent);
 
-        fs.writeFileSync('./services/.txt', feedsData);
+        await page.goto('https://www.facebook.com/groups/257393997640502');
+        const strs = await page.evaluate(this.findPostsContent, 100);
+
+        const texts = strs
+            .filter(Boolean)
+            .map((str) => cheerio.load(str).text());
+
+        fs.writeFileSync(
+            'services/posts.json',
+            JSON.stringify({
+                posts: texts,
+            })
+        );
 
         await browser.close();
     }
@@ -38,21 +48,100 @@ class FBService {
         loginBtn.dispatchEvent(new MouseEvent('click'));
     }
 
-    async findFeedsContent() {
-        function findArticleEl(el) {
+    async findPostsContent(num = 0) {
+        async function waitUntil(fn, { maxTimes = 10, duration = 500 } = {}) {
+            let waitingTimes = 0;
+            let result = false;
+
+            while (waitingTimes < maxTimes) {
+                await new Promise((r) => {
+                    setTimeout(r, duration);
+                });
+
+                result = fn();
+
+                if (result) {
+                    break;
+                } else {
+                    waitingTimes += 1;
+                }
+            }
+
+            return result;
+        }
+        function findAllPosts() {
+            return document.querySelectorAll('[role=feed] > div > div');
+        }
+        function findPostContent(el) {
             return el.querySelector('div[role=article] div[id]');
         }
-        try {
-            const feeds = document.querySelectorAll('[role=feed] > div > div');
-            const contentEl = findArticleEl(feeds[1]);
-            const moreBtn = contentEl.querySelector('[role=button]');
-            if (moreBtn) {
-                moreBtn.click();
+        async function loadNewPosts() {
+            const wait = 500;
+            const maxWaitTimes = 3;
+
+            const originPost = findAllPosts();
+            let posts = originPost;
+            let waitingTimes = 0;
+            let isLoad = false;
+
+            window.scrollTo(0, 100000);
+
+            while (waitingTimes < maxWaitTimes) {
+                await new Promise((r) => {
+                    setTimeout(r, wait);
+                });
+
+                posts = findAllPosts();
+                if (posts.length > originPost.length) {
+                    isLoad = true;
+                    break;
+                } else {
+                    waitingTimes += 1;
+                }
             }
-            await new Promise((r) => {
-                setTimeout(r, 0);
-            });
-            return contentEl.outerHTML;
+
+            return isLoad && posts;
+        }
+        try {
+            let postsContent = [];
+            let posts = findAllPosts();
+
+            for (let i = 1; i <= num; i++) {
+                let post = posts[i];
+                if (!post) {
+                    const newPosts = await loadNewPosts();
+                    if (newPosts) {
+                        posts = newPosts;
+                        post = newPosts[i];
+                    } else {
+                        break;
+                    }
+                }
+                window.scrollTo(
+                    0,
+                    window.scrollY + post.getBoundingClientRect().top
+                );
+
+                const contentEl = await waitUntil(() => {
+                    posts = findAllPosts();
+                    post = posts[i];
+                    return findPostContent(post);
+                });
+
+                if (contentEl) {
+                    const moreBtn = contentEl.querySelector('[role=button]');
+                    if (moreBtn) {
+                        moreBtn.click();
+                    }
+                    await new Promise((r) => {
+                        setTimeout(r, 0);
+                    });
+                    postsContent.push(contentEl.outerHTML);
+                } else {
+                    postsContent.push(null);
+                }
+            }
+            return postsContent;
         } catch (error) {
             return error.message;
         }
