@@ -23,6 +23,14 @@
                     "commands": ["cd front-end"]
                 }
             ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "nlp server",
+                    "commands": ["cd nlp-server"]
+                }
+            ]
         }
     ]
 }
