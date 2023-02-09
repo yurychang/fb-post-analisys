@@ -1,16 +1,14 @@
 import json
 from ckiptagger import data_utils, construct_dictionary, WS, POS, NER
 
-ws = WS("./data")
-pos = POS("./data")
-ner = NER("./data")
+ws = WS("./ckip_tagger_model")
+pos = POS("./ckip_tagger_model")
+ner = NER("./ckip_tagger_model")
 
 with open("posts.json", "r", encoding="utf-8") as file:
-    posts = json.load(file)
+    post = json.load(file)
 
-posts = posts['posts']
-
-sentence_list = posts
+sentence_list = post['posts']
 
 word_sentence_list = ws(
     sentence_list,
@@ -32,20 +30,8 @@ def print_word_pos_sentence(word_sentence, pos_sentence):
 jsonData = {
     'result': []
 }
-for i, sentence in enumerate(sentence_list):
-    # print()
-    # print(f"'{sentence}'")
-    # print_word_pos_sentence(word_sentence_list[i],  pos_sentence_list[i])
 
-    post_ner_result = sorted(entity_sentence_list[i])
-
-    # for entity in post_ner_result:
-    #     print(type(entity), entity)
-
-    dict_from_array = {
-        index: tuple_ for index, tuple_ in enumerate(post_ner_result)
-    }
-    jsonData["result"].append(dict_from_array)
+jsonData['result'] = list(map(lambda set: sorted(set), entity_sentence_list))
 
 with open("results.json", "w", encoding="utf-8") as file:
     json.dump(jsonData, file, ensure_ascii=False)

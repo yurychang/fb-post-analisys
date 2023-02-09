@@ -28,7 +28,7 @@
             "splitTerminals": [
                 {
                     "name": "nlp server",
-                    "commands": ["cd nlp-server"]
+                    "commands": ["cd nlp-server", ".venv/Scripts/activate"]
                 }
             ]
         }
