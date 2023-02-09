@@ -1,9 +1,30 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const cheerio = require('cheerio');
-require('dotenv').config();
+
 class FBService {
     async main() {
+        const strs = await this.fetchPosts(
+            'https://www.facebook.com/groups/257393997640502',
+            10
+        );
+
+        const texts = strs
+            .filter(Boolean)
+            .map((str) => cheerio.load(str).text());
+
+        fs.writeFileSync(
+            'services/posts.json',
+            JSON.stringify({
+                posts: texts,
+            })
+        );
+    }
+
+    async fetchPosts(
+        groupPageUrl = 'https://www.facebook.com/groups/257393997640502',
+        postCount = 100
+    ) {
         const browser = await puppeteer.launch({
             args: ['--deny-permission-prompts'],
             // debug options
@@ -23,21 +44,12 @@ class FBService {
         });
         await page.waitForNavigation();
 
-        await page.goto('https://www.facebook.com/groups/257393997640502');
-        const strs = await page.evaluate(this.findPostsContent, 100);
-
-        const texts = strs
-            .filter(Boolean)
-            .map((str) => cheerio.load(str).text());
-
-        fs.writeFileSync(
-            'services/posts.json',
-            JSON.stringify({
-                posts: texts,
-            })
-        );
+        await page.goto(groupPageUrl);
+        const posts = await page.evaluate(this.findPostsContent, postCount);
 
         await browser.close();
+
+        return posts;
     }
 
     async browserLoginFB({ email, pwd }) {
@@ -81,12 +93,12 @@ class FBService {
 
             const originPost = findAllPosts();
             let posts = originPost;
-            let waitingTimes = 0;
+            let waitTimes = 0;
             let isLoad = false;
 
             window.scrollTo(0, 100000);
 
-            while (waitingTimes < maxWaitTimes) {
+            while (waitTimes < maxWaitTimes) {
                 await new Promise((r) => {
                     setTimeout(r, wait);
                 });
@@ -96,7 +108,7 @@ class FBService {
                     isLoad = true;
                     break;
                 } else {
-                    waitingTimes += 1;
+                    waitTimes += 1;
                 }
             }
 
@@ -148,4 +160,4 @@ class FBService {
     }
 }
 
-new FBService().main();
+module.exports = new FBService();
