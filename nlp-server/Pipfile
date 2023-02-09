@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 ckiptagger = {extras = ["gdown"], version = "*"}
 tensorflow = "*"
+flask = "*"
 
 [dev-packages]
 
