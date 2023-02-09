@@ -27,12 +27,16 @@
         {
             "splitTerminals": [
                 {
-                    "name": "nlp server",
+                    "name": "nlp-server/start",
                     "commands": [
                         "cd nlp-server",
                         "pipenv install --skip-lock",
-                        "pipenv shell"
+                        "pipenv run start"
                     ]
+                },
+                {
+                    "name": "nlp-server",
+                    "commands": ["cd nlp-server"]
                 }
             ]
         }
