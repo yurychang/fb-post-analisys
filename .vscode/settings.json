@@ -28,7 +28,11 @@
             "splitTerminals": [
                 {
                     "name": "nlp server",
-                    "commands": ["cd nlp-server", ".venv/Scripts/activate"]
+                    "commands": [
+                        "cd nlp-server",
+                        "pipenv install --skip-lock",
+                        "pipenv shell"
+                    ]
                 }
             ]
         }
