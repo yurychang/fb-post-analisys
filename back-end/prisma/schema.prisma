@@ -10,18 +10,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
-  posts Post[]
+model post {
+  id              Int           @id @default(autoincrement())
+  content         String?
+  named_entities  Json
+  fetch_record_id Int
+  fetch_record    fetch_record? @relation(fields: [fetch_record_id], references: [id])
 }
 
-model Post {
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User    @relation(fields: [authorId], references: [id])
-  authorId  Int
+model fetch_record {
+  id         Int      @id @default(autoincrement())
+  fetch_time DateTime
+  posts      post[]
 }
