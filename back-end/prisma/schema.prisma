@@ -10,16 +10,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model post {
-  id              Int           @id @default(autoincrement())
+model Post {
+  id              Int         @id @default(autoincrement())
   content         String?
   named_entities  Json
+  update_time     DateTime    @updatedAt
+  create_time     DateTime    @default(now())
   fetch_record_id Int
-  fetch_record    fetch_record? @relation(fields: [fetch_record_id], references: [id])
+  fetch_record    FetchRecord @relation(fields: [fetch_record_id], references: [id])
 }
 
-model fetch_record {
+model FetchRecord {
   id         Int      @id @default(autoincrement())
   fetch_time DateTime
-  posts      post[]
+  posts      Post[]
 }

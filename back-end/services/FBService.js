@@ -160,4 +160,4 @@ class FBService {
     }
 }
 
-module.exports = new FBService();
+module.exports = FBService;

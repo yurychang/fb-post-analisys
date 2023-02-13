@@ -1,0 +1,400 @@
+{
+    "posts": [
+        {
+            "content": "《2/2(四)下班輕鬆桌遊趣》主揪:朱世傑時間:19:30(可晚到可早退)費用:15元/1小時桌遊:(輕鬆派對型)犯人在跳舞、搖滾節奏、矮人礦坑、血契、風聲、演化論、UNO..等等地點:不鳥穀 For Good台北市中正區博愛路60號五樓https://maps.app.goo.gl/8rznZNymHCbUzB4e6有興趣的朋友私訊我~",
+            "named_entities": [
+                { "start": 5, "end": 6, "type": "CARDINAL", "value": "四" },
+                {
+                    "start": 7,
+                    "end": 14,
+                    "type": "WORK_OF_ART",
+                    "value": "下班輕鬆桌遊趣"
+                },
+                { "start": 18, "end": 21, "type": "PERSON", "value": "朱世傑" },
+                { "start": 24, "end": 29, "type": "DATE", "value": "19:30" },
+                { "start": 40, "end": 43, "type": "MONEY", "value": "15元" },
+                { "start": 44, "end": 47, "type": "TIME", "value": "1小時" },
+                {
+                    "start": 105,
+                    "end": 111,
+                    "type": "GPE",
+                    "value": "台北市中正區"
+                }
+            ]
+        },
+        {
+            "content": "師大每週末優質玩家桌遊團（主揪：蔡牧岐）本團遊戲以戰棋為主，重策為輔，還有剩時間才會玩輕中策、陣營遊戲。偶爾過節時會開聖經主題福音桌遊。戰棋比起重策還要複雜很多倍，遊戲時間也長很多。請詳閱本團遊戲公約，先行上網了解本次開團遊戲的約略性質，並衡量自身學習意願再報名。本次遊戲，依總人數預定如下：2人：決戰歐陸3-6人：三分天下時間：2023年2月5日（週日）11：30至20：30（所有遊戲皆含教學）地點：師大學一舍B1餐廳(該場地男女皆可使用，有冰溫熱開飲機、洗手間，多數時間都非常安靜，不似一般桌遊店容易受隔壁音量干擾。而且具備可容納6至8人、遠遠大於桌遊店的木頭桌面）交通方式：捷運台電大樓站3號出口，沿師大路往北走約300公尺，然後從師大路11號的宿舍大門進去，往左手邊走即可看到牆上貼的指引。這個地點沒有門禁，但不是非常好找，如果沒來過請提早出門。如果坐到捷運古亭站再走過來，會稍微遠一點點。費用：免收費（免收費的意思就是主揪已經幫你出了本來你去桌遊店自己應該出的費用，所以對團員的要求也會高於開在桌遊店的收費團。如果你是一位隨性的人，喜歡遲到早退，麻煩你去桌遊店參加付費團，這裡是給自律且尊重他人的玩家聚會場合）本團遊戲公約（凡報名者視為同意遵守公約） : 1，凡遲到超過15分鐘者，無論理由一律禁止中途加入遊戲，且日後永久禁止再次報名。2，報名後無故缺席或失聯或早退者永久禁止再次報名。3，為維護遊戲品質，手機請全程保持靜音。如果你的工作是業務之類需要鈴聲的，切勿報名本團。4，請勿於遊戲主桌飲食或飲水，如需飲食請至隔壁空桌，除非你身上有好幾千塊可以買下桌遊。5，遊戲中請勿說髒話、在其他玩家已經行動後再次回手、搶先其他玩家執行行動。違反者將列入黑名單，日後報名只能列位候補。",
+            "named_entities": [
+                { "start": 0, "end": 2, "type": "ORG", "value": "師大" },
+                { "start": 16, "end": 19, "type": "PERSON", "value": "蔡牧岐" },
+                { "start": 146, "end": 147, "type": "CARDINAL", "value": "2" },
+                { "start": 151, "end": 153, "type": "LOC", "value": "歐陸" },
+                {
+                    "start": 153,
+                    "end": 156,
+                    "type": "CARDINAL",
+                    "value": "3-6"
+                },
+                { "start": 158, "end": 159, "type": "CARDINAL", "value": "三" },
+                {
+                    "start": 165,
+                    "end": 174,
+                    "type": "DATE",
+                    "value": "2023年2月5日"
+                },
+                {
+                    "start": 175,
+                    "end": 189,
+                    "type": "TIME",
+                    "value": "週日）11：30至20：30"
+                },
+                {
+                    "start": 202,
+                    "end": 211,
+                    "type": "FAC",
+                    "value": "師大學一舍B1餐廳"
+                },
+                {
+                    "start": 268,
+                    "end": 271,
+                    "type": "CARDINAL",
+                    "value": "6至8"
+                },
+                {
+                    "start": 291,
+                    "end": 298,
+                    "type": "FAC",
+                    "value": "捷運台電大樓站"
+                },
+                { "start": 298, "end": 299, "type": "CARDINAL", "value": "3" },
+                { "start": 304, "end": 307, "type": "LOC", "value": "師大路" },
+                {
+                    "start": 311,
+                    "end": 316,
+                    "type": "QUANTITY",
+                    "value": "300公尺"
+                },
+                {
+                    "start": 320,
+                    "end": 326,
+                    "type": "LOC",
+                    "value": "師大路11號"
+                },
+                {
+                    "start": 382,
+                    "end": 387,
+                    "type": "FAC",
+                    "value": "捷運古亭站"
+                },
+                { "start": 534, "end": 535, "type": "CARDINAL", "value": "1" },
+                { "start": 541, "end": 545, "type": "TIME", "value": "15分鐘" },
+                { "start": 574, "end": 575, "type": "CARDINAL", "value": "2" },
+                { "start": 599, "end": 600, "type": "CARDINAL", "value": "3" },
+                { "start": 643, "end": 644, "type": "CARDINAL", "value": "4" }
+            ]
+        },
+        {
+            "content": "2/1(三) 沒事揪桌遊主糾 : 本人地點 : 新北市中和區景新街(中和國小附近)費用 : 無時間 : 2/1星期三  18:30~24:00 可提早走人數 : 3人成團(目前3人 已成團)預計開的遊戲 : 大西部開拓者+一路向北、沙丘 : 帝國全擴、森生不息遊戲含教學，歡迎新手加入~另徵幽港長期團",
+            "named_entities": [
+                { "start": 0, "end": 3, "type": "CARDINAL", "value": "2/1" },
+                { "start": 4, "end": 5, "type": "CARDINAL", "value": "三" },
+                { "start": 30, "end": 33, "type": "LOC", "value": "景新街" },
+                { "start": 34, "end": 38, "type": "ORG", "value": "中和國小" },
+                {
+                    "start": 52,
+                    "end": 58,
+                    "type": "DATE",
+                    "value": "2/1星期三"
+                },
+                {
+                    "start": 60,
+                    "end": 71,
+                    "type": "TIME",
+                    "value": "18:30~24:00"
+                },
+                { "start": 81, "end": 82, "type": "CARDINAL", "value": "3" },
+                { "start": 88, "end": 89, "type": "CARDINAL", "value": "3" }
+            ]
+        },
+        {
+            "content": "2/1（三）策略團兵馬俑、tiletum時間：14:30~22:00地點：橘色空間（板橋南門街30號2樓）人數：4人（目前4已滿，感謝參加）（人數多可拆桌玩不同策略。）費用：1人150（含飲料無限暢飲）主揪：雍正週二策略團        兵馬俑在圓環裡選擇行動，把各種兵馬俑擺放到陵墓當中並獲得分數。除了能看到兵馬俑隊伍成型的樂趣，美術模型也很有帶入感。         Tiletum 在歐洲版圖的城市裡進行貿易跟建造，創造自己的勢力。遊戲當中旅行跟競爭計分城市的部分互動有趣。        遊戲附帶教學，歡迎留言或私訊加入。若是策略累了之後也可以玩陣營遊戲或是簡單的小品遊戲，一起放鬆歡樂喔。",
+            "named_entities": [
+                { "start": 0, "end": 3, "type": "CARDINAL", "value": "2/1" },
+                { "start": 4, "end": 5, "type": "CARDINAL", "value": "三" },
+                {
+                    "start": 9,
+                    "end": 12,
+                    "type": "WORK_OF_ART",
+                    "value": "兵馬俑"
+                },
+                {
+                    "start": 23,
+                    "end": 34,
+                    "type": "TIME",
+                    "value": "14:30~22:00"
+                },
+                {
+                    "start": 42,
+                    "end": 52,
+                    "type": "FAC",
+                    "value": "板橋南門街30號2樓"
+                },
+                { "start": 56, "end": 57, "type": "CARDINAL", "value": "4" },
+                { "start": 61, "end": 62, "type": "CARDINAL", "value": "4" },
+                { "start": 87, "end": 88, "type": "CARDINAL", "value": "1" },
+                { "start": 89, "end": 92, "type": "CARDINAL", "value": "150" },
+                {
+                    "start": 104,
+                    "end": 108,
+                    "type": "DATE",
+                    "value": "雍正週二"
+                },
+                {
+                    "start": 119,
+                    "end": 122,
+                    "type": "WORK_OF_ART",
+                    "value": "兵馬俑"
+                },
+                {
+                    "start": 134,
+                    "end": 137,
+                    "type": "WORK_OF_ART",
+                    "value": "兵馬俑"
+                },
+                {
+                    "start": 155,
+                    "end": 158,
+                    "type": "WORK_OF_ART",
+                    "value": "兵馬俑"
+                },
+                { "start": 195, "end": 197, "type": "LOC", "value": "歐洲" }
+            ]
+        },
+        {
+            "content": "1/29 (週日)輕鬆桌遊團時間：中午12:00~關店(#可晚到)#新手友善教到會做夢#有想玩的可以先問~#歡迎喜歡嘗試各種類型的朋友~費用：揪團卡200$(其餘比照店家)地點:新莊瘋桌遊新莊區新泰路178號2樓聯繫：小新",
+            "named_entities": [
+                { "start": 0, "end": 4, "type": "DATE", "value": "1/29" },
+                { "start": 6, "end": 8, "type": "DATE", "value": "週日" },
+                {
+                    "start": 17,
+                    "end": 24,
+                    "type": "TIME",
+                    "value": "中午12:00"
+                },
+                { "start": 74, "end": 78, "type": "MONEY", "value": "200$" },
+                { "start": 89, "end": 91, "type": "GPE", "value": "新莊" },
+                { "start": 94, "end": 97, "type": "GPE", "value": "新莊區" },
+                {
+                    "start": 97,
+                    "end": 106,
+                    "type": "FAC",
+                    "value": "新泰路178號2樓"
+                }
+            ]
+        },
+        {
+            "content": "［臺北] 1/29日「印加寶藏」X「富饒之城」#新手桌遊團時間：111/01/29（日）18:30-21:30 主揪：哈娜印加寶藏玩家扮演探險家到印加古神廟尋寶，在每次翻開新的探索卡前，要各自決定是否繼續探索，選擇回到營地可以留住寶石，選擇繼續探索下去可能會遇到災難而失去所有寶石。富饒之城玩家在遊戲中扮演著中世紀的城堡領主，運用各種不同的人物來幫助你建設或妨礙他人。地點：台北市松山區光復北路103巷38號1F蜂蜜窩桌遊咖啡館（捷運南京三民站）價位：200（含飲料）新手團，歡迎各位朋友加入一起同樂～當天會玩各種不同的桌遊！歡迎有興趣的朋友來玩呦～快來一起跟我玩桌遊#新手友善 #桌遊團6人以下：德國心臟病、卡卡頌。7-10人：印加寶藏、風聲、富饒之城、阿瓦隆。11人以上：估估劃劃、獵巫鎮。您已被邀請加入「蜂蜜窩HONEY」！請點選以下連結加入社群！https://line.me/....../iyLTuglez_9gJItYcuHu8tN09281......",
+            "named_entities": [
+                { "start": 1, "end": 3, "type": "GPE", "value": "臺北" },
+                { "start": 5, "end": 10, "type": "DATE", "value": "1/29日" },
+                {
+                    "start": 32,
+                    "end": 41,
+                    "type": "DATE",
+                    "value": "111/01/29"
+                },
+                { "start": 59, "end": 63, "type": "GPE", "value": "哈娜印加" },
+                { "start": 73, "end": 75, "type": "GPE", "value": "印加" },
+                { "start": 154, "end": 157, "type": "DATE", "value": "中世紀" },
+                { "start": 187, "end": 190, "type": "GPE", "value": "台北市" },
+                {
+                    "start": 193,
+                    "end": 214,
+                    "type": "FAC",
+                    "value": "光復北路103巷38號1F蜂蜜窩桌遊咖啡館"
+                },
+                {
+                    "start": 215,
+                    "end": 222,
+                    "type": "FAC",
+                    "value": "捷運南京三民站"
+                },
+                {
+                    "start": 226,
+                    "end": 229,
+                    "type": "CARDINAL",
+                    "value": "200"
+                },
+                { "start": 294, "end": 295, "type": "CARDINAL", "value": "6" },
+                { "start": 299, "end": 301, "type": "GPE", "value": "德國" },
+                {
+                    "start": 309,
+                    "end": 313,
+                    "type": "CARDINAL",
+                    "value": "7-10"
+                },
+                { "start": 315, "end": 317, "type": "GPE", "value": "印加" },
+                { "start": 328, "end": 331, "type": "LOC", "value": "阿瓦隆" },
+                { "start": 332, "end": 334, "type": "CARDINAL", "value": "11" }
+            ]
+        },
+        {
+            "content": "時間:1/27(五) 10:00 – 21:00左右 可早退地點:新莊自宅 靠近<新北產業園區站>費用:免費人數:徵1至2人,<已有3人>主揪:本人遊戲: 方舟動物園 大西開拓者 沙丘          阿納克遺跡 殖民火星 奧丁盛宴 等等...  (會教學,看大家想開什麼)",
+            "named_entities": [
+                { "start": 3, "end": 7, "type": "CARDINAL", "value": "1/27" },
+                { "start": 8, "end": 9, "type": "CARDINAL", "value": "五" },
+                { "start": 19, "end": 24, "type": "TIME", "value": "21:00" },
+                { "start": 33, "end": 35, "type": "GPE", "value": "新莊" },
+                {
+                    "start": 41,
+                    "end": 48,
+                    "type": "FAC",
+                    "value": "新北產業園區站"
+                },
+                { "start": 58, "end": 61, "type": "CARDINAL", "value": "1至2" },
+                { "start": 66, "end": 67, "type": "CARDINAL", "value": "3" }
+            ]
+        },
+        {
+            "content": "［台北］1/27 (五)電車難題X 血契獵殺時間：18:30-21:30主揪：柿子世紀大難題又出現了一條軌道上躺者你老婆另一條軌道上躺著五個無辜的小孩電車即將駛來你手上握有控制軌道方向的權利你的選擇是？！熟知的吸血鬼們揭開神秘的面紗隨著領土的擴張 伴隨的是無情的戰爭族長將忠心的部下聚集起來現在 與敵人對決的時刻到了！地點：臺北市松山區長安東路二段215號10樓之4貳家桌遊東區店（南京復興站5號出口，步行5-8分鐘）價位：200（含飲料） 6人以下：塔寶、傳情畫意、拉密、妙筆神猜7-10人：化裝舞會、間諜危機、真心話不冒險、黃牌11人以上：估估劃劃、妙傳爆趣、電車難題新手團～大家一起來玩桌遊！歡迎加入我們的大家庭「台北中正活動團 CODE2016」！請點選以下連結加入社群！https://line.me/....../XZZPwZEPWfgTMxjodTcOZdkey......",
+            "named_entities": [
+                { "start": 1, "end": 3, "type": "PERSON", "value": "台北" },
+                { "start": 4, "end": 9, "type": "DATE", "value": "1/27 " },
+                { "start": 10, "end": 11, "type": "CARDINAL", "value": "五" },
+                {
+                    "start": 25,
+                    "end": 36,
+                    "type": "TIME",
+                    "value": "18:30-21:30"
+                },
+                { "start": 68, "end": 69, "type": "CARDINAL", "value": "五" },
+                {
+                    "start": 162,
+                    "end": 168,
+                    "type": "GPE",
+                    "value": "臺北市松山區"
+                },
+                {
+                    "start": 168,
+                    "end": 181,
+                    "type": "LOC",
+                    "value": "長安東路二段215號10樓"
+                },
+                {
+                    "start": 191,
+                    "end": 196,
+                    "type": "LOC",
+                    "value": "南京復興站"
+                },
+                { "start": 196, "end": 197, "type": "CARDINAL", "value": "5" },
+                {
+                    "start": 203,
+                    "end": 208,
+                    "type": "TIME",
+                    "value": "5-8分鐘"
+                },
+                {
+                    "start": 212,
+                    "end": 215,
+                    "type": "CARDINAL",
+                    "value": "200"
+                },
+                { "start": 221, "end": 222, "type": "CARDINAL", "value": "6" },
+                {
+                    "start": 241,
+                    "end": 245,
+                    "type": "CARDINAL",
+                    "value": "7-10"
+                },
+                { "start": 266, "end": 268, "type": "CARDINAL", "value": "11" },
+                {
+                    "start": 310,
+                    "end": 317,
+                    "type": "ORG",
+                    "value": "台北中正活動團"
+                },
+                { "start": 322, "end": 326, "type": "DATE", "value": "2016" }
+            ]
+        },
+        {
+            "content": "【1/27(五) 北投桌遊團】 無論你是一個人、一群人，新手想入門或是老手想找對手都歡迎~~從歡樂派對到燒腦策略都可以，一起來交朋友吧~●主揪：柚子●時間：下午2:00~晚上11:30(可以提早離開)●地點：台北市北投區公所清江里辦公處(近捷運奇岩站，台北市北投區清江路201號)●費用：50元(水電冷氣費)●人數：上限16人(前次滿團)●桌遊：4人-動物反抗軍、仙境幽谷、未來造鎮、聖胡安、珊瑚物語5人-來包洋芋片、骰子工廠、否決權、漫步普羅旺斯、鐵道任務歐洲篇、國王與我、馬卡龍、埃及考古新旅程、倉庫城、現代藝術、馬尼拉、雪之時6人-星杯、十二生肖、東京之王闇黑版、神機妙算7人-寂靜迷航、七大奇蹟艦隊擴充、蟲蟲燒烤豪門派對、富饒之城8人-駱駝大賽超級盃、炸彈競技場2、四海好傢伙、暗影獵人、力爭上游、奶酪大盜9人-瞎掰王10人-CSI犯罪現場、盜夢都市11人-忍者之夜、推翻蘇丹(1)可事先許願和討論想玩或帶什麼桌遊分享 (2)戴口罩，垃圾請自行帶走(3)希望以後可以穩定開團，大家可以告訴大家，有興趣的歡迎推文+1或私訊報名，並說可以的時間呦~",
+            "named_entities": [
+                { "start": 1, "end": 5, "type": "DATE", "value": "1/27" },
+                { "start": 6, "end": 7, "type": "CARDINAL", "value": "五" },
+                { "start": 9, "end": 14, "type": "ORG", "value": "北投桌遊團" },
+                {
+                    "start": 78,
+                    "end": 92,
+                    "type": "TIME",
+                    "value": "下午2:00~晚上11:30"
+                },
+                {
+                    "start": 104,
+                    "end": 112,
+                    "type": "ORG",
+                    "value": "台北市北投區公所"
+                },
+                { "start": 135, "end": 139, "type": "LOC", "value": "201號" },
+                { "start": 144, "end": 147, "type": "MONEY", "value": "50元" },
+                { "start": 160, "end": 162, "type": "CARDINAL", "value": "16" },
+                { "start": 173, "end": 174, "type": "CARDINAL", "value": "4" },
+                { "start": 192, "end": 195, "type": "GPE", "value": "聖胡安" },
+                { "start": 200, "end": 201, "type": "CARDINAL", "value": "5" },
+                {
+                    "start": 238,
+                    "end": 241,
+                    "type": "PERSON",
+                    "value": "馬卡龍"
+                },
+                { "start": 242, "end": 244, "type": "GPE", "value": "埃及" },
+                { "start": 259, "end": 262, "type": "GPE", "value": "馬尼拉" },
+                { "start": 266, "end": 267, "type": "CARDINAL", "value": "6" },
+                {
+                    "start": 272,
+                    "end": 274,
+                    "type": "CARDINAL",
+                    "value": "十二"
+                },
+                { "start": 277, "end": 279, "type": "GPE", "value": "東京" },
+                { "start": 289, "end": 290, "type": "CARDINAL", "value": "7" },
+                { "start": 297, "end": 298, "type": "CARDINAL", "value": "七" },
+                { "start": 319, "end": 320, "type": "CARDINAL", "value": "8" },
+                { "start": 335, "end": 336, "type": "CARDINAL", "value": "2" },
+                { "start": 357, "end": 358, "type": "CARDINAL", "value": "9" },
+                { "start": 363, "end": 365, "type": "CARDINAL", "value": "10" },
+                { "start": 379, "end": 381, "type": "CARDINAL", "value": "11" },
+                { "start": 390, "end": 392, "type": "GPE", "value": "蘇丹" },
+                { "start": 393, "end": 394, "type": "CARDINAL", "value": "1" },
+                { "start": 415, "end": 416, "type": "CARDINAL", "value": "2" },
+                { "start": 429, "end": 430, "type": "CARDINAL", "value": "3" },
+                { "start": 460, "end": 461, "type": "CARDINAL", "value": "1" }
+            ]
+        },
+        {
+            "content": "士林策略桌遊團時間:1/26~29(四~日) 13:00~18:00**請務必戴口罩****報名若未註明參加時間，將一律視同當天可全程參與!!!會遲到早退請先說，方便我遊戲安排**名額將優先留給當天可全程參與者主揪:林靖地點:士林茶咖(士林區社中街133號)費用:一整天僅一杯50元飲料低消+如有使用店內遊戲再加20元人數:再徵3人本人開團常流團，若成團會另行告知，請勿直接到現場。 遊戲都會教學，但因為都是策略遊戲為主，請耐心聽完規則。菜單:1. Lost Ruins Of Arnak 阿納克遺蹟2. Messina 1347 墨西拿13473. Clans of Caledonia 加勒多尼亞世族4. Cavum 採礦達人5. Kanban 看板6. Beyound the Sun 超越太陽...等",
+            "named_entities": [
+                { "start": 0, "end": 2, "type": "GPE", "value": "士林" },
+                { "start": 10, "end": 17, "type": "DATE", "value": "1/26~29" },
+                { "start": 97, "end": 99, "type": "DATE", "value": "當天" },
+                { "start": 108, "end": 110, "type": "PERSON", "value": "林靖" },
+                {
+                    "start": 113,
+                    "end": 117,
+                    "type": "FAC",
+                    "value": "士林茶咖"
+                },
+                { "start": 124, "end": 128, "type": "LOC", "value": "133號" },
+                { "start": 138, "end": 141, "type": "MONEY", "value": "50元" },
+                { "start": 156, "end": 159, "type": "MONEY", "value": "20元" },
+                { "start": 164, "end": 165, "type": "CARDINAL", "value": "3" },
+                { "start": 266, "end": 268, "type": "GPE", "value": "墨西" },
+                {
+                    "start": 295,
+                    "end": 300,
+                    "type": "NORP",
+                    "value": "加勒多尼亞"
+                }
+            ]
+        }
+    ]
+}
