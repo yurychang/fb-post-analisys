@@ -1,9 +1,9 @@
 import json
 from ckiptagger import data_utils, construct_dictionary, WS, POS, NER
 
-ws = WS("./ckip_tagger_model")
-pos = POS("./ckip_tagger_model")
-ner = NER("./ckip_tagger_model")
+ws = WS("./data")
+pos = POS("./data")
+ner = NER("./data")
 
 with open("posts.json", "r", encoding="utf-8") as file:
     post = json.load(file)

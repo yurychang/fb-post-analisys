@@ -1,8 +1,8 @@
 from ckiptagger import WS, POS, NER
 
-ws = WS("./ckip_tagger_model")
-pos = POS("./ckip_tagger_model")
-ner = NER("./ckip_tagger_model")
+ws = WS("./data")
+pos = POS("./data")
+ner = NER("./data")
 
 
 def analyze_ner(sentence_list):
